@@ -1,0 +1,137 @@
+/* CSS Resets */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+  content: "";
+  background-image: url(https://st.depositphotos.com/1434993/2638/v/600/depositphotos_26387209-stock-video-luxury-casino-chips-dropping-yellow.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  font-weight: 400;
+  margin: auto;
+  padding: 20px;
+  max-width: 1000px;
+  /* background-repeat: no-repeat; */
+
+}
+
+
+h1 {
+  font-weight: 900;
+  text-decoration: underline 5px #ffb700;
+  text-align: center;
+  color:white;
+  font-size: 4em;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+
+.player-one, .computer {
+  font-weight: 600;
+  margin: 50px;
+}
+
+
+#deal, #reset {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding: 15px 25px;
+  margin: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffb700;
+  letter-spacing: 2px;
+  
+}
+
+#reset {
+  position: relative;
+  left: 31em;
+  margin: 0;
+}
+
+#deal {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+}
+
+form {
+  color: white;
+  position: relative;
+  top: 12%;
+  left: 15em;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+label, #one, #eleven{
+  position: relative;
+  left: 2em;
+  font-size: 20px;
+
+}
+
+input[type=radio] {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 6px;
+}
+
+
+
+.player-one {
+color: white;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.computer {
+color: white;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+  
+
+.player-one-score {
+color: white;
+  position: relative;
+  top: 10%;
+  left: 16%;
+  font-size: 4em;
+  font-weight: 200;
+}
+
+.computer-score {
+  color: white;
+  position: relative;
+  top: 10px;
+  left: 80%;
+  font-size: 4em;
+  font-weight: 200;
+}
+
+#result {
+  text-align: center;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background: #FDD835;
+}
+
