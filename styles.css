@@ -1,85 +1,71 @@
-/* CSS Resets */
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-body{
-  content: "";
-  background-image: url(https://st.depositphotos.com/1434993/2638/v/600/depositphotos_26387209-stock-video-luxury-casino-chips-dropping-yellow.jpg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  font-weight: 400;
-  margin: auto;
-  padding: 20px;
-  max-width: 1000px;
-  /* background-repeat: no-repeat; */
+html {
+   background-image: url(images/casino_chips.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   background-position: top;
 
 }
-
 
 h1 {
   font-weight: 900;
-  text-decoration: underline 5px #ffb700;
+  text-decoration: underline 5px #d20202;
   text-align: center;
-  color:white;
+  color: white;
   font-size: 4em;
-  padding: 10px;
+  margin: 20px ;
   letter-spacing: 2px;
 }
 
-
-.player-one, .computer {
-  font-weight: 600;
-  margin: 50px;
+.controls {
+text-align: center;
+color: white;
+letter-spacing: 1px;
 }
 
+hr {
+    border: 2px solid;
+    margin: 10px 100px;
+    
+}
+
+#result{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 48px;
+
+}
 
 #deal, #reset {
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
   padding: 15px 25px;
   margin: 15px;
   border-radius: 10px;
   cursor: pointer;
-  background: #ffb700;
-  letter-spacing: 2px;
+  border: 2px solid;
+  letter-spacing: 1px;
   
 }
 
-#reset {
-  position: relative;
-  left: 31em;
-  margin: 0;
+.deal:hover{
+    background-color: #d20202;
+    color: white;
+    text-transform: uppercase;
 }
 
-#deal {
-  position: absolute;
-  bottom: 0%;
-  left: 45%;
+.reset:hover{
+    background-color: #001eff;
+    color: white;
+    text-transform: uppercase;
 }
 
-form {
-  color: white;
-  position: relative;
-  top: 12%;
-  left: 15em;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-
-label, #one, #eleven{
-  position: relative;
-  left: 2em;
-  font-size: 20px;
-
+.players, .computer {
+  font-weight: 600;
+  margin: 50px;
+  
 }
 
 input[type=radio] {
@@ -88,50 +74,72 @@ input[type=radio] {
   position: relative;
   top: 5px;
   margin-right: 6px;
+  cursor: pointer;
 }
 
-
-
-.player-one {
-color: white;
+.players {
+    text-align: center;
+    color: white;
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 20%;
+  left: 15%;
+  letter-spacing: 2px;
 }
 
 .computer {
-color: white;
+    text-align: center;
+    color: white;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 70%;
+  letter-spacing: 2px;
 }
-  
 
-.player-one-score {
-color: white;
+
+.score{ 
+    border: 5px solid;
+    border-radius: 100px;
+    background-color: black;
+    padding: 20px;
+    font-size: 5em;
+    font-weight: 200;
+    position: relative;
+    top: 380px;
+    left: 20px;
+
+}
+
+
+.cards {
   position: relative;
-  top: 10%;
-  left: 16%;
-  font-size: 4em;
-  font-weight: 200;
+  padding-top: 30px;
 }
 
-.computer-score {
-  color: white;
-  position: relative;
-  top: 10px;
-  left: 80%;
-  font-size: 4em;
-  font-weight: 200;
-}
-
-#result {
-  text-align: center;
-  font-size: 1em;
+.card {
+  width: 120px;
+  height: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  background: #FDD835;
+  top: 50px;
+  right: 40px;
+  /* rotate: z 20deg; */
+  scale: 0.8
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+ 
+
+
+
 
