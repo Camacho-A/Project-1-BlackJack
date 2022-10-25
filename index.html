@@ -4,57 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lets Play BlackJack (21)</title>
+    <title>The Game of BlackJack(21)</title>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
-    <header>
-        <h1>BlackJack (21) Game</h1>
-    </header>
-   
-    <div class="deal">
-        <button id="reset">Reset Game</button>
-        <button id="deal">Deal</button>
-    </div>
-   
-    
-    <form class="ace-value">
-        <p>What is your desired Ace value?</p>
-        
 
-        <label id="one"> Value of 1
-            <input type="radio" name="ace-option">
-        </label>
+<header>
+  <h1>Blackjack The Game (21)</h1>
 
-        <label id="eleven">Value of 11
-            <input type="radio" name="ace-option">
-        </label>
+  <div class="controls">
+
+    <button class="reset" id="reset">Reset</button>
+    <button class="deal" id="deal">Deal</button>
+
+    <form class="ace-options">
+      <p>What is your desired Ace value?</p>
+      <label><input value="low" type="radio" name="acesValue" />Value of 1</label>
+      <label><input value="high" type="radio" name="acesValue" />Value of 11</label>
     </form>
+  </div>
 
-<div class="gamers">
-  </div>
-    <h2 class="player-one">Player 1</h2>
-    <div class="player-one-hand">
-     
+</header>
+
+<div class="container">
+    <div class="players" id="scores">
+        <div class="player one"></div>
+        <h2>Player 1</h2>
+        <div class="cards" id="playercard"></div>
+        <span class="score" id="playerscore">0</span>
     </div>
-    <span class="player-one-score">0</span>
-  </div>
-  
-  <div>
-    <h2 class="computer">Computer</h2>
-    <div class="computer-hand">
-     
+    <div class="Computer">
+        <h2>Computer</h2>
+        <div class="cards" id="computercard"></div>
+        <span class="score" id="computerscore">0</span>
     </div>
-    <span class="computer-score">0</span>
-  </div>
   <div id="result"></div>
-
 </div>
 
 
-
- 
 </body>
-</html>
