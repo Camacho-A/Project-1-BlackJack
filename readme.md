@@ -23,3 +23,9 @@ https://deckofcardsapi.com/
 
 ### Link to My Project
 https://project-1-blackjack-3bsp2kx91-camacho-a.vercel.app/
+
+
+### Unsolved CSS Issue
+- struggling to get the cards to stack differently to be able to see the cards underneath
+
+- need more practice with CSS Media Queries for future projects
